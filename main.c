@@ -18,7 +18,7 @@ int main(){
     printf("Welcome to C-lasifier, what directory would you like to get in order:\n");
     char *input;
     scanf("%s", input);
-    if(verifyDir(input)!=0){return 1;}
+    if(verifyDir(input)==1){return 1;}
 
     struct dirent *target;
     DIR *dir = opendir(input);
